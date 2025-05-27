@@ -2,8 +2,8 @@ import css from './ContactList.module.css';
 import Contact from '../Contact/Contact';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from '../../redux/contactsOps';
-import { selectVisibleContacts } from '../../redux/selector';
+import { deleteContact } from '../../redux/contacts/operations';
+import { selectVisibleContacts } from '../../redux/filters/selectors';
 
 const formatPhoneNumber = phone => {
   return phone.replace(/\sx\d+$/, '');
